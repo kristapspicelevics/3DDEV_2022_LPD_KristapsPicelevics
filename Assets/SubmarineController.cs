@@ -39,7 +39,7 @@ public class SubmarineController : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            currSpeed -= speedChange;
+            currSpeed -= speedChange * 4;
         }
         else if (currSpeed <= minSpeed)
         {
@@ -47,7 +47,7 @@ public class SubmarineController : MonoBehaviour
         }
         else
         {
-            currSpeed -= speedChange / 4;
+            currSpeed -= speedChange * 2;
         }
         currSpeed = Mathf.Clamp(currSpeed, -maxBackwardSpeed, maxForwardSpeed);
         rb.AddForce(transform.forward * currSpeed);
