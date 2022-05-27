@@ -6,7 +6,7 @@ public class AI : MonoBehaviour
 {
 
     public Transform target;
-    public float minDist;
+    public float maxDist;
     public float speed;
     private Rigidbody rb;
     public float stabilizationSmoothing;
@@ -26,7 +26,7 @@ public class AI : MonoBehaviour
         Vector3 direction = target.transform.position - transform.position;
         float distance = Vector3.Distance(transform.position, target.position);
         direction.Normalize();
-        if (distance > minDist)
+        if (distance < maxDist)
             transform.position += direction * speed * Time.deltaTime;
 
         rb.MoveRotation(Quaternion.Slerp(rb.rotation, Quaternion.Euler(new Vector3(0, rb.rotation.eulerAngles.y, 0)), stabilizationSmoothing));

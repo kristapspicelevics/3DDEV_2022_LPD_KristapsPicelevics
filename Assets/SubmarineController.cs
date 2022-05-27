@@ -23,7 +23,7 @@ public class SubmarineController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Move();
         Turn();
