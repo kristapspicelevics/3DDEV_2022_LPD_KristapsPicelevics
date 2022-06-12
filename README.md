@@ -7,6 +7,7 @@ Controls:
 WASD - Horizontal movement
 UP & DOWN - Vertical movement
 Spacebar - Shooting torpedoes
+Esc - Pause game
 
 Points:
 Red chests - 10000 points
