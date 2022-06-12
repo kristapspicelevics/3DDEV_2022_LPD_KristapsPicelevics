@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
 
-        if (Random.value > 0.1) //%90 percent chance (1 - 0.1 is 0.9)
+        if (Random.value > 0.1) //%90 percent chance (1 - 0.1 is 0.9) items or enemies will appear
         {
             spawn = Instantiate(gameObj, enemySpawnPoint.position, enemySpawnPoint.rotation);
         }
