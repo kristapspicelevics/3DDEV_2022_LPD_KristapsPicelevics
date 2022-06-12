@@ -15,7 +15,7 @@ public class CameraFollow : MonoBehaviour
         transform.rotation = target.rotation;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         transform.position = Vector3.Lerp(transform.position, target.position, movSmoothing);
         transform.rotation = Quaternion.Slerp(transform.rotation, target.rotation, rotSmoothing);
