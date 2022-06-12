@@ -39,7 +39,7 @@ public class SubmarineExplosion : MonoBehaviour
 
             spawned = true;
         }
-        else if (comp.currentHealth >= 30 && spawned == true)
+        else if (comp.currentHealth > 30 && spawned == true)
         {
             Destroy(smok);
             spawned = false;

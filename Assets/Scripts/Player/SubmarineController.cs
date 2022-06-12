@@ -79,12 +79,10 @@ public class SubmarineController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            //    rb.AddTorque(transform.right * riseSpeed / 10);
             rb.AddForce(transform.up * riseSpeed);
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            //    rb.AddTorque(transform.right * -riseSpeed / 10);
             rb.AddForce(transform.up * -riseSpeed);
         }
     }

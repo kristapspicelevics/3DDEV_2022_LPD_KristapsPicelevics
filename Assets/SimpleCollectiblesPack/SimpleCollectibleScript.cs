@@ -56,7 +56,6 @@ public class SimpleCollectibleScript : MonoBehaviour {
 				comp.currentHealth = comp.maxHealth;
 			}
 
-			Debug.Log ("Do NoType Command");
 		}
 		if (CollectibleType == CollectibleTypes.LargeHealthPickup) {
 
@@ -69,7 +68,6 @@ public class SimpleCollectibleScript : MonoBehaviour {
 				comp.currentHealth = comp.maxHealth;
 			}
 
-			Debug.Log ("Do NoType Command");
 		}
 		if (CollectibleType == CollectibleTypes.SilverCoin) {
 
@@ -80,19 +78,16 @@ public class SimpleCollectibleScript : MonoBehaviour {
 
 			//Add in code here;
 			AddScore(2000);
-			Debug.Log ("Do NoType Command");
 		}
 		if (CollectibleType == CollectibleTypes.SilverBars) {
 
 			//Add in code here;
 			AddScore(5000);
-			Debug.Log ("Do NoType Command");
 		}
 		if (CollectibleType == CollectibleTypes.GoldBars) {
 
 			//Add in code here;
 			AddScore(10000);
-			Debug.Log ("Do NoType Command");
 		}
 
 		Destroy (gameObject);
