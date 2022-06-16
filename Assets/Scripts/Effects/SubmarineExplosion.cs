@@ -33,13 +33,13 @@ public class SubmarineExplosion : MonoBehaviour
             audioSource.Play();
 
         }
-        else if ((comp.currentHealth > 0 && comp.currentHealth <= 30) && spawned == false)
+        else if ((comp.currentHealth > 0 && comp.currentHealth <= comp.maxHealth / 3) && spawned == false)
         {
             smok = Instantiate(smoke, transform.position, Quaternion.identity);
 
             spawned = true;
         }
-        else if (comp.currentHealth > 30 && spawned == true)
+        else if (comp.currentHealth > comp.maxHealth / 3 && spawned == true)
         {
             Destroy(smok);
             spawned = false;

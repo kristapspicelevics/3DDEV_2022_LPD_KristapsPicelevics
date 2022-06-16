@@ -23,7 +23,7 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((currentHealth > 0 && currentHealth <= 30) && spawned == false)
+        if ((currentHealth > 0 && currentHealth <= maxHealth / 3) && spawned == false)
         {
             smok = Instantiate(smoke, transform.position, Quaternion.identity);
             if (spawned == true)

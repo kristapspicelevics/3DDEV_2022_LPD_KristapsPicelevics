@@ -19,3 +19,18 @@ Enemy submarines - 1000 points
 Incase of low health there are 2 types of health pickups:
 Red health pack - 25 HP
 Green health pack - 50 HP
+
+Changelog:
+
+Version 1.0.0
+
+Initial release.
+
+Version 1.1.0
+
+Fixed highscore issue;
+Increased player speed;
+Reduced Enemy HP;
+Changed some desing elements;
+Added instructions;
+Bug Fixes;

@@ -12,6 +12,11 @@ public class MainMenuScript : MonoBehaviour
         Debug.Log("Game Closed");
     }
 
+    public void Instructions(int sceneID)
+    {
+        SceneManager.LoadScene(sceneID);
+    }
+
     public void StartGame(int sceneID)
     {
         SceneManager.LoadScene(sceneID);

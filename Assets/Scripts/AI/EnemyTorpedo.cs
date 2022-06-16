@@ -15,6 +15,10 @@ public class EnemyTorpedo : MonoBehaviour
             collision.gameObject.GetComponent<Health>().currentHealth -= damage;
             Explosion();
         }
+        if (collision.gameObject.tag == "Torpedo")
+        {
+            Debug.Log("");
+        }
         else
         {
             Explosion();
